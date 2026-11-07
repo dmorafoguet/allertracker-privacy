@@ -117,89 +117,83 @@
 
     <!-- ESPAÑOL -->
     <section id="es" class="card">
-      <span class="badge">🔒 100% Local-First · Sin Servidores Propios</span>
-      <h2>Política de Privacidad (Español)</h2>
+      <span class="badge">🔒 100% Local-First · Uso Personal · Sin Servidores Propios</span>
+      <h2>Política de Privacidad y Aviso de Uso Personal (Español)</h2>
       <p><strong>Última actualización:</strong> Noviembre de 2026<br/>
       <strong>Aplicación:</strong> AllerTracker (<code>com.dmorafoguet.allertracker</code>)<br/>
-      <strong>Desarrollador:</strong> David Mora Foguet (<a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>)</p>
+      <strong>Desarrollador (Creador Personal Independiente):</strong> David Mora Foguet (<a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>)</p>
 
-      <h3>1. Garantía de Privacidad Local-First</h3>
-      <p><strong>AllerTracker</strong> ha sido diseñada bajo una arquitectura estrictamente <strong>Local-First</strong>. Todos los datos introducidos por el usuario (nombre, apellidos, registro diario de síntomas de rinitis/conjuntivitis alérgica, medicación habitual o de rescate y notas clínicas) se almacenan <strong>exclusivamente en la memoria interna del dispositivo del usuario</strong> (mediante SQLite/Room y Android DataStore). No disponemos de servidores propios, cuentas de usuario, bases de datos en la nube, rastreadores analíticos ni publicidad.</p>
+      <h3>1. Naturaleza de la Aplicación (Uso Personal, No Médico y Sin Sensores de Salud)</h3>
+      <p><strong>AllerTracker</strong> es una utilidad informativa y un bloc de notas de <strong>uso estrictamente personal</strong> desarrollado por un creador independiente. La aplicación únicamente consulta los boletines públicos ambientales de polen y esporas de Catalunya (<a href="https://aerobiologia.cat" target="_blank" rel="noopener">XAC - PIA</a>) y permite al usuario anotar localmente en su propio teléfono si ha tenido molestias cotidianas (como estornudos o picor ocular).<br/>
+      <strong>Descargo de responsabilidad:</strong> AllerTracker <strong>no es un dispositivo médico</strong>, no se conecta a ningún hardware o sensor biométrico/de salud (ni utiliza Health Connect), no realiza diagnósticos médicos ni ofrece consejos o tratamientos sanitarios.</p>
 
-      <h3>2. Uso del Permiso de Ubicación (GPS)</h3>
+      <h3>2. Garantía de Privacidad Local-First (Cero Recopilación de Datos)</h3>
+      <p><strong>AllerTracker</strong> funciona bajo una arquitectura estrictamente <strong>Local-First</strong>. Todas las anotaciones personales introducidas por el usuario se guardan <strong>exclusivamente en la memoria interna del propio teléfono</strong> (mediante SQLite/Room y Android DataStore). El desarrollador no recopila, ni recibe, ni almacena ningún dato personal o de uso. No existen servidores propios, cuentas de usuario, bases de datos en la nube, rastreadores analíticos ni publicidad.</p>
+
+      <h3>3. Uso del Permiso de Ubicación (GPS)</h3>
       <ul>
-        <li><strong>Finalidad exclusiva:</strong> La aplicación solicita permiso opcional de ubicación (<code>ACCESS_COARSE_LOCATION</code> / <code>ACCESS_FINE_LOCATION</code>) únicamente cuando el usuario utiliza la aplicación para calcular en el propio teléfono cuál de las 10 estaciones oficiales de la <em>Xarxa Aerobiològica de Catalunya (XAC - PIA)</em> se encuentra más próxima mediante la fórmula matemática de Haversine.</li>
-        <li><strong>No transmisión de coordenadas:</strong> Las coordenadas GPS exactas del usuario <strong>nunca se envían a ningún servidor externo</strong>. La consulta pública al boletín aerobiológico de <a href="https://aerobiologia.cat" target="_blank" rel="noopener">aerobiologia.cat</a> se realiza únicamente con el nombre del municipio de la estación oficial más cercana (por ejemplo, <code>barcelona</code>, <code>tarragona</code>, <code>girona</code>).</li>
+        <li><strong>Finalidad exclusiva:</strong> La aplicación solicita permiso opcional de ubicación (<code>ACCESS_COARSE_LOCATION</code> / <code>ACCESS_FINE_LOCATION</code>) únicamente para calcular dentro del propio teléfono cuál de las estaciones oficiales de la <em>Xarxa Aerobiològica de Catalunya (XAC - PIA)</em> se encuentra más próxima mediante la fórmula matemática de Haversine.</li>
+        <li><strong>No transmisión de coordenadas:</strong> Las coordenadas GPS del usuario <strong>nunca se envían a ningún servidor externo</strong>. La consulta pública al boletín ambiental de <a href="https://aerobiologia.cat" target="_blank" rel="noopener">aerobiologia.cat</a> se realiza únicamente con el nombre del municipio de la estación oficial más cercana (por ejemplo, <code>barcelona</code>, <code>tarragona</code>, <code>girona</code>).</li>
       </ul>
 
-      <h3>3. Datos de Salud y Generación de Informes PDF</h3>
+      <h3>4. Anotaciones Personales y Exportación a PDF</h3>
       <ul>
-        <li>Los registros de síntomas y medicación permanecen al 100% dentro del teléfono del usuario.</li>
-        <li>La generación del informe clínico mensual en formato PDF se realiza íntegramente de forma local en el dispositivo. El archivo PDF solo se comparte si el usuario pulsa explícitamente el botón <em>"Compartir / Exportar PDF"</em> y elige por sí mismo el destinatario mediante el menú nativo de Android.</li>
+        <li>Las anotaciones diarias permanecen al 100% dentro del teléfono del usuario.</li>
+        <li>La generación del resumen mensual en formato PDF se realiza íntegramente de forma local en el dispositivo. El archivo PDF solo se comparte si el usuario pulsa explícitamente el botón <em>"Compartir / Exportar PDF"</em> y elige el destinatario mediante el menú nativo de Android.</li>
       </ul>
 
-      <h3>4. Eliminación de Datos y Control del Usuario</h3>
-      <p>Dado que todos los datos residen únicamente en el teléfono del usuario, este puede borrar registros individuales desde la propia aplicación en cualquier momento, o eliminar la totalidad de los datos borrando el almacenamiento de la aplicación o desinstalándola de su dispositivo Android.</p>
-
-      <h3>5. Contacto</h3>
-      <p>Para cualquier consulta sobre esta Política de Privacidad, puede contactar con el desarrollador en: <a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>.</p>
+      <h3>5. Eliminación de Datos y Contacto</h3>
+      <p>El usuario puede borrar cualquier anotación desde la propia aplicación en cualquier momento, o eliminar todos los datos borrando el almacenamiento de la aplicación o desinstalándola de su dispositivo Android. Para cualquier consulta: <a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>.</p>
     </section>
 
     <!-- CATALÀ -->
     <section id="ca" class="card">
-      <span class="badge">🔒 100% Local-First · Sense Servidors Propis</span>
-      <h2>Política de Privadesa (Català)</h2>
+      <span class="badge">🔒 100% Local-First · Ús Personal · Sense Servidors Propis</span>
+      <h2>Política de Privadesa i Avís d'Ús Personal (Català)</h2>
       <p><strong>Darrera actualització:</strong> Novembre de 2026<br/>
       <strong>Aplicació:</strong> AllerTracker (<code>com.dmorafoguet.allertracker</code>)<br/>
-      <strong>Desenvolupador:</strong> David Mora Foguet (<a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>)</p>
+      <strong>Desenvolupador (Creador Personal Independent):</strong> David Mora Foguet (<a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>)</p>
 
-      <h3>1. Garantia de Privadesa Local-First</h3>
-      <p><strong>AllerTracker</strong> s'ha dissenyat sota una arquitectura estrictament <strong>Local-First</strong>. Totes les dades introduïdes per l'usuari (nom, cognoms, registre diari de símptomes de rinitis/conjuntivitis al·lèrgica, medicació i notes clíniques) s'emmagatzemen <strong>exclusivament a la memòria interna del dispositiu de l'usuari</strong>. No disposem de servidors propis, comptes d'usuari, bases de dades al núvol, rastrejadors analítics ni publicitat.</p>
+      <h3>1. Naturalesa de l'Aplicació (Ús Personal, No Mèdic i Sense Sensors de Salut)</h3>
+      <p><strong>AllerTracker</strong> és una eina informativa i una llibreta d'anotacions d'<strong>ús estrictament personal</strong> desenvolupada per un creador independent. L'aplicació únicament consulta els butlletins públics ambientals de pol·len i espores a Catalunya (<a href="https://aerobiologia.cat" target="_blank" rel="noopener">XAC - PIA</a>) i permet a l'usuari anotar localment al seu propi telèfon molèsties quotidianes (com esternuts o picor als ulls).<br/>
+      <strong>Descàrrec de responsabilitat:</strong> AllerTracker <strong>no és un dispositiu mèdic</strong>, no utilitza cap sensor de salut ni maquinari extern, no realitza diagnòstics ni ofereix consell mèdic.</p>
 
-      <h3>2. Ús del Permís d'Ubicació (GPS)</h3>
+      <h3>2. Garantia de Privadesa Local-First (Zero Recopilació de Dades)</h3>
+      <p>Totes les anotacions introduïdes per l'usuari s'emmagatzemen <strong>exclusivament a la memòria interna del dispositiu de l'usuari</strong>. El desenvolupador no recopila ni rep cap dada. No disposem de servidors propis, comptes d'usuari, bases de dades al núvol, rastrejadors analítics ni publicitat.</p>
+
+      <h3>3. Ús del Permís d'Ubicació (GPS)</h3>
       <ul>
-        <li><strong>Finalitat exclusiva:</strong> L'aplicació sol·licita permís opcional d'ubicació (<code>ACCESS_COARSE_LOCATION</code> / <code>ACCESS_FINE_LOCATION</code>) únicament per calcular al mateix telèfon quina de les 10 estacions oficials de la <em>Xarxa Aerobiològica de Catalunya (XAC - PIA)</em> és més propera mitjançant la fórmula de Haversine.</li>
-        <li><strong>Sense transmissió de coordenades:</strong> Les coordenades GPS exactes de l'usuari <strong>mai no s'envien a cap servidor extern</strong>. La consulta pública al butlletí de <a href="https://aerobiologia.cat" target="_blank" rel="noopener">aerobiologia.cat</a> es fa només amb el codi de l'estació oficial més propera (per exemple, <code>barcelona</code>, <code>tarragona</code>, <code>girona</code>).</li>
+        <li><strong>Finalitat exclusiva:</strong> El permís opcional d'ubicació s'utilitza únicament al mateix telèfon per calcular quina estació oficial de la <em>Xarxa Aerobiològica de Catalunya (XAC - PIA)</em> és més propera.</li>
+        <li><strong>Sense transmissió de coordenades:</strong> Les coordenades GPS de l'usuari <strong>mai no s'envien a cap servidor extern</strong>.</li>
       </ul>
 
-      <h3>3. Dades de Salut i Informes PDF</h3>
-      <ul>
-        <li>Els registres mèdics romanen al 100% dins del telèfon de l'usuari.</li>
-        <li>La generació de l'informe clínic en PDF es fa localment al dispositiu i només es comparteix quan l'usuari prem explícitament el botó <em>"Compartir / Exportar PDF"</em>.</li>
-      </ul>
-
-      <h3>4. Eliminació de Dades</h3>
-      <p>L'usuari pot esborrar qualsevol registre des de l'aplicació en qualsevol moment, o suprimir totes les dades esborrant l'emmagatzematge de l'app o desinstal·lant-la.</p>
+      <h3>4. Resums en PDF i Eliminació de Dades</h3>
+      <p>Els resums mensuals en PDF es generen localment al telèfon. L'usuari pot esborrar qualsevol anotació des de l'aplicació en qualsevol moment o suprimir totes les dades desinstal·lant l'app.</p>
     </section>
 
     <!-- ENGLISH -->
     <section id="en" class="card">
-      <span class="badge">🔒 100% Local-First · Zero Cloud Servers</span>
-      <h2>Privacy Policy (English)</h2>
+      <span class="badge">🔒 100% Local-First · Personal Use · Zero Cloud Servers</span>
+      <h2>Privacy Policy & Personal Use Disclaimer (English)</h2>
       <p><strong>Last updated:</strong> November 2026<br/>
       <strong>Application:</strong> AllerTracker (<code>com.dmorafoguet.allertracker</code>)<br/>
-      <strong>Developer:</strong> David Mora Foguet (<a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>)</p>
+      <strong>Developer (Independent Personal Creator):</strong> David Mora Foguet (<a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>)</p>
 
-      <h3>1. Local-First Privacy Architecture</h3>
-      <p><strong>AllerTracker</strong> is built with a strict <strong>Local-First</strong> architecture. All personal and health-related information entered by the user (name, daily allergic rhinitis/conjunctivitis symptom logs, medication intake, and clinical notes) is stored <strong>exclusively on the user's device</strong> using local SQLite/Room and Android DataStore. We do not operate any backend servers, user accounts, cloud databases, analytics trackers, or advertising SDKs.</p>
+      <h3>1. Nature of the App (Personal Use, Non-Medical & Zero Health Hardware)</h3>
+      <p><strong>AllerTracker</strong> is a <strong>strictly personal</strong> informational pollen viewer and daily note-taking utility built by an independent personal creator. It simply queries public environmental pollen bulletins for Catalonia (<a href="https://aerobiologia.cat" target="_blank" rel="noopener">XAC - PIA</a>) and lets users keep local notes on their own phone regarding everyday allergy discomfort (such as sneezing or itchy eyes).<br/>
+      <strong>Disclaimer:</strong> AllerTracker is <strong>not a medical device</strong>, does not connect to any health sensors, wearables, or medical hardware (and does not use Health Connect), does not provide medical diagnoses, and does not offer medical advice.</p>
 
-      <h3>2. Location Permission (GPS)</h3>
+      <h3>2. Local-First Privacy Architecture (Zero Data Collection)</h3>
+      <p>All personal notes entered by the user are stored <strong>exclusively on the user's device</strong> using local SQLite/Room and Android DataStore. The developer does not collect, receive, or store any user data. We do not operate backend servers, user accounts, cloud databases, analytics trackers, or advertising SDKs.</p>
+
+      <h3>3. Location Permission (GPS)</h3>
       <ul>
-        <li><strong>Sole Purpose:</strong> The app requests optional location permission (<code>ACCESS_COARSE_LOCATION</code> / <code>ACCESS_FINE_LOCATION</code>) strictly on-device to compute the nearest official aerobiological station from the <em>Xarxa Aerobiològica de Catalunya (XAC - PIA)</em> catalog using the Haversine distance formula.</li>
-        <li><strong>No Coordinate Transmission:</strong> Your exact GPS coordinates <strong>never leave your device</strong>. Public forecast requests to <a href="https://aerobiologia.cat" target="_blank" rel="noopener">aerobiologia.cat</a> only include the municipality code of the nearest station (e.g., <code>barcelona</code>, <code>tarragona</code>, <code>girona</code>).</li>
+        <li><strong>Sole Purpose:</strong> Optional location permission is used strictly on-device to find the nearest official aerobiological station from the <em>Xarxa Aerobiològica de Catalunya (XAC - PIA)</em> catalog via the Haversine distance formula.</li>
+        <li><strong>No Coordinate Transmission:</strong> Your GPS coordinates <strong>never leave your device</strong>. Public forecast requests to <a href="https://aerobiologia.cat" target="_blank" rel="noopener">aerobiologia.cat</a> only include the municipality code of the nearest station (e.g., <code>barcelona</code>, <code>tarragona</code>, <code>girona</code>).</li>
       </ul>
 
-      <h3>3. Health Data & PDF Reports</h3>
-      <ul>
-        <li>All symptom and medication logs remain 100% on your device.</li>
-        <li>Clinical PDF reports are generated locally on-device and are only shared when the user explicitly taps <em>"Share / Export PDF"</em> via the native Android share sheet.</li>
-      </ul>
-
-      <h3>4. Data Deletion & User Control</h3>
-      <p>Users can delete individual entries inside the app at any time, or erase all data permanently by clearing the app's storage or uninstalling AllerTracker from their Android device.</p>
-
-      <h3>5. Contact</h3>
-      <p>If you have any questions regarding this Privacy Policy, please contact: <a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>.</p>
+      <h3>4. Local PDF Summaries & Data Deletion</h3>
+      <p>Monthly PDF summaries are generated locally on-device and are only shared when the user explicitly taps <em>"Share / Export PDF"</em>. Users can delete individual notes inside the app at any time or erase all data by uninstalling the application.</p>
     </section>
   </div>
 
