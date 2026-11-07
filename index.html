@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AllerTracker — Política de Privacidad / Política de Privadesa / Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --primary: #0f766e;
+      --primary-light: #ccfbf1;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+      color: #ffffff;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0;
+      opacity: 0.92;
+      font-size: 1.05rem;
+    }
+    .container {
+      max-width: 880px;
+      margin: -1.5rem auto 3rem auto;
+      padding: 0 1.25rem;
+    }
+    .lang-nav {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .lang-nav a {
+      background: var(--card);
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+    }
+    .lang-nav a:hover {
+      background: var(--primary-light);
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.75rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+    }
+    .badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+      border-bottom: 2px solid var(--primary-light);
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      margin-top: 1.4rem;
+      margin-bottom: 0.4rem;
+      color: var(--text);
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌾 AllerTracker</h1>
+    <p>Política de Privacidad · Política de Privadesa · Privacy Policy</p>
+  </header>
+
+  <div class="container">
+    <nav class="lang-nav">
+      <a href="#es">🇪🇸 Español</a>
+      <a href="#ca">🏴 Català</a>
+      <a href="#en">🇬🇧 English</a>
+    </nav>
+
+    <!-- ESPAÑOL -->
+    <section id="es" class="card">
+      <span class="badge">🔒 100% Local-First · Sin Servidores Propios</span>
+      <h2>Política de Privacidad (Español)</h2>
+      <p><strong>Última actualización:</strong> Noviembre de 2026<br/>
+      <strong>Aplicación:</strong> AllerTracker (<code>com.dmorafoguet.allertracker</code>)<br/>
+      <strong>Desarrollador:</strong> David Mora Foguet (<a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>)</p>
+
+      <h3>1. Garantía de Privacidad Local-First</h3>
+      <p><strong>AllerTracker</strong> ha sido diseñada bajo una arquitectura estrictamente <strong>Local-First</strong>. Todos los datos introducidos por el usuario (nombre, apellidos, registro diario de síntomas de rinitis/conjuntivitis alérgica, medicación habitual o de rescate y notas clínicas) se almacenan <strong>exclusivamente en la memoria interna del dispositivo del usuario</strong> (mediante SQLite/Room y Android DataStore). No disponemos de servidores propios, cuentas de usuario, bases de datos en la nube, rastreadores analíticos ni publicidad.</p>
+
+      <h3>2. Uso del Permiso de Ubicación (GPS)</h3>
+      <ul>
+        <li><strong>Finalidad exclusiva:</strong> La aplicación solicita permiso opcional de ubicación (<code>ACCESS_COARSE_LOCATION</code> / <code>ACCESS_FINE_LOCATION</code>) únicamente cuando el usuario utiliza la aplicación para calcular en el propio teléfono cuál de las 10 estaciones oficiales de la <em>Xarxa Aerobiològica de Catalunya (XAC - PIA)</em> se encuentra más próxima mediante la fórmula matemática de Haversine.</li>
+        <li><strong>No transmisión de coordenadas:</strong> Las coordenadas GPS exactas del usuario <strong>nunca se envían a ningún servidor externo</strong>. La consulta pública al boletín aerobiológico de <a href="https://aerobiologia.cat" target="_blank" rel="noopener">aerobiologia.cat</a> se realiza únicamente con el nombre del municipio de la estación oficial más cercana (por ejemplo, <code>barcelona</code>, <code>tarragona</code>, <code>girona</code>).</li>
+      </ul>
+
+      <h3>3. Datos de Salud y Generación de Informes PDF</h3>
+      <ul>
+        <li>Los registros de síntomas y medicación permanecen al 100% dentro del teléfono del usuario.</li>
+        <li>La generación del informe clínico mensual en formato PDF se realiza íntegramente de forma local en el dispositivo. El archivo PDF solo se comparte si el usuario pulsa explícitamente el botón <em>"Compartir / Exportar PDF"</em> y elige por sí mismo el destinatario mediante el menú nativo de Android.</li>
+      </ul>
+
+      <h3>4. Eliminación de Datos y Control del Usuario</h3>
+      <p>Dado que todos los datos residen únicamente en el teléfono del usuario, este puede borrar registros individuales desde la propia aplicación en cualquier momento, o eliminar la totalidad de los datos borrando el almacenamiento de la aplicación o desinstalándola de su dispositivo Android.</p>
+
+      <h3>5. Contacto</h3>
+      <p>Para cualquier consulta sobre esta Política de Privacidad, puede contactar con el desarrollador en: <a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>.</p>
+    </section>
+
+    <!-- CATALÀ -->
+    <section id="ca" class="card">
+      <span class="badge">🔒 100% Local-First · Sense Servidors Propis</span>
+      <h2>Política de Privadesa (Català)</h2>
+      <p><strong>Darrera actualització:</strong> Novembre de 2026<br/>
+      <strong>Aplicació:</strong> AllerTracker (<code>com.dmorafoguet.allertracker</code>)<br/>
+      <strong>Desenvolupador:</strong> David Mora Foguet (<a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>)</p>
+
+      <h3>1. Garantia de Privadesa Local-First</h3>
+      <p><strong>AllerTracker</strong> s'ha dissenyat sota una arquitectura estrictament <strong>Local-First</strong>. Totes les dades introduïdes per l'usuari (nom, cognoms, registre diari de símptomes de rinitis/conjuntivitis al·lèrgica, medicació i notes clíniques) s'emmagatzemen <strong>exclusivament a la memòria interna del dispositiu de l'usuari</strong>. No disposem de servidors propis, comptes d'usuari, bases de dades al núvol, rastrejadors analítics ni publicitat.</p>
+
+      <h3>2. Ús del Permís d'Ubicació (GPS)</h3>
+      <ul>
+        <li><strong>Finalitat exclusiva:</strong> L'aplicació sol·licita permís opcional d'ubicació (<code>ACCESS_COARSE_LOCATION</code> / <code>ACCESS_FINE_LOCATION</code>) únicament per calcular al mateix telèfon quina de les 10 estacions oficials de la <em>Xarxa Aerobiològica de Catalunya (XAC - PIA)</em> és més propera mitjançant la fórmula de Haversine.</li>
+        <li><strong>Sense transmissió de coordenades:</strong> Les coordenades GPS exactes de l'usuari <strong>mai no s'envien a cap servidor extern</strong>. La consulta pública al butlletí de <a href="https://aerobiologia.cat" target="_blank" rel="noopener">aerobiologia.cat</a> es fa només amb el codi de l'estació oficial més propera (per exemple, <code>barcelona</code>, <code>tarragona</code>, <code>girona</code>).</li>
+      </ul>
+
+      <h3>3. Dades de Salut i Informes PDF</h3>
+      <ul>
+        <li>Els registres mèdics romanen al 100% dins del telèfon de l'usuari.</li>
+        <li>La generació de l'informe clínic en PDF es fa localment al dispositiu i només es comparteix quan l'usuari prem explícitament el botó <em>"Compartir / Exportar PDF"</em>.</li>
+      </ul>
+
+      <h3>4. Eliminació de Dades</h3>
+      <p>L'usuari pot esborrar qualsevol registre des de l'aplicació en qualsevol moment, o suprimir totes les dades esborrant l'emmagatzematge de l'app o desinstal·lant-la.</p>
+    </section>
+
+    <!-- ENGLISH -->
+    <section id="en" class="card">
+      <span class="badge">🔒 100% Local-First · Zero Cloud Servers</span>
+      <h2>Privacy Policy (English)</h2>
+      <p><strong>Last updated:</strong> November 2026<br/>
+      <strong>Application:</strong> AllerTracker (<code>com.dmorafoguet.allertracker</code>)<br/>
+      <strong>Developer:</strong> David Mora Foguet (<a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>)</p>
+
+      <h3>1. Local-First Privacy Architecture</h3>
+      <p><strong>AllerTracker</strong> is built with a strict <strong>Local-First</strong> architecture. All personal and health-related information entered by the user (name, daily allergic rhinitis/conjunctivitis symptom logs, medication intake, and clinical notes) is stored <strong>exclusively on the user's device</strong> using local SQLite/Room and Android DataStore. We do not operate any backend servers, user accounts, cloud databases, analytics trackers, or advertising SDKs.</p>
+
+      <h3>2. Location Permission (GPS)</h3>
+      <ul>
+        <li><strong>Sole Purpose:</strong> The app requests optional location permission (<code>ACCESS_COARSE_LOCATION</code> / <code>ACCESS_FINE_LOCATION</code>) strictly on-device to compute the nearest official aerobiological station from the <em>Xarxa Aerobiològica de Catalunya (XAC - PIA)</em> catalog using the Haversine distance formula.</li>
+        <li><strong>No Coordinate Transmission:</strong> Your exact GPS coordinates <strong>never leave your device</strong>. Public forecast requests to <a href="https://aerobiologia.cat" target="_blank" rel="noopener">aerobiologia.cat</a> only include the municipality code of the nearest station (e.g., <code>barcelona</code>, <code>tarragona</code>, <code>girona</code>).</li>
+      </ul>
+
+      <h3>3. Health Data & PDF Reports</h3>
+      <ul>
+        <li>All symptom and medication logs remain 100% on your device.</li>
+        <li>Clinical PDF reports are generated locally on-device and are only shared when the user explicitly taps <em>"Share / Export PDF"</em> via the native Android share sheet.</li>
+      </ul>
+
+      <h3>4. Data Deletion & User Control</h3>
+      <p>Users can delete individual entries inside the app at any time, or erase all data permanently by clearing the app's storage or uninstalling AllerTracker from their Android device.</p>
+
+      <h3>5. Contact</h3>
+      <p>If you have any questions regarding this Privacy Policy, please contact: <a href="mailto:dmorafoguet@gmail.com">dmorafoguet@gmail.com</a>.</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2026 AllerTracker · Desarrollado por David Mora Foguet · Datos aerobiológicos cortesía de PIA - XAC (UAB)
+  </footer>
+</body>
+</html>
+
